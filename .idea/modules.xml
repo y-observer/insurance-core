@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/insurance-core.iml" filepath="$PROJECT_DIR$/insurance-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/insurance-core-base/insurance-core-base.iml" filepath="$PROJECT_DIR$/insurance-core-base/insurance-core-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/insurance-core-common/insurance-core-common.iml" filepath="$PROJECT_DIR$/insurance-core-common/insurance-core-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/insurance-core-encipher/insurance-core-encipher.iml" filepath="$PROJECT_DIR$/insurance-core-encipher/insurance-core-encipher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/insurance-core-mybatis/insurance-core-mybatis.iml" filepath="$PROJECT_DIR$/insurance-core-mybatis/insurance-core-mybatis.iml" />
+    </modules>
+  </component>
+</project>

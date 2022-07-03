@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="insurance-core-common" />
+        <module name="insurance-core-mybatis" />
+        <module name="insurance-core-encipher" />
+        <module name="insurance-core-base" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="insurance-core" target="8" />
+      <module name="insurance-core-base" target="8" />
+      <module name="insurance-core-common" target="8" />
+      <module name="insurance-core-encipher" target="8" />
+      <module name="insurance-core-mybatis" target="8" />
+      <module name="mybatis-core" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

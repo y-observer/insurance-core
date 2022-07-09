@@ -7,12 +7,10 @@ import org.bouncycastle.crypto.macs.HMac;
 import org.bouncycastle.crypto.params.KeyParameter;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.bouncycastle.pqc.math.linearalgebra.ByteUtils;
+import org.bouncycastle.util.encoders.Hex;
 
 import java.io.InputStream;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.Security;
+import java.security.*;
 import java.util.Arrays;
 
 @Slf4j
@@ -97,6 +95,18 @@ public abstract class SM3Util {
             log.error("SM3哈希运算失败", e);
         }
         return null;
+    }
+
+    /**
+     * 产生盐
+     *
+     * @return
+     */
+    public static String getSalt() {
+        byte[] values = new byte[16];
+        SecureRandom random = new SecureRandom();
+        random.nextBytes(values);
+        return Hex.toHexString(values);
     }
 
 }
